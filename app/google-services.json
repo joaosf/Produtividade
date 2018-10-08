@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "256418479003",
+    "firebase_url": "https://produtividade-d8919.firebaseio.com",
+    "project_id": "produtividade-d8919",
+    "storage_bucket": "produtividade-d8919.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256418479003:android:1f14f9100cd119de",
+        "android_client_info": {
+          "package_name": "br.com.produtividade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256418479003-1k1rjelgufga464s46d9mkt2qtib3vlv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.produtividade",
+            "certificate_hash": "776e67e5cd72c16b98caca41e945c774b7537166"
+          }
+        },
+        {
+          "client_id": "256418479003-lil95t9ikfdhhveqt9shhrdq86alvp0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5AJBYHAtpqWna5VvjYJvgQAorEO6eT1U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256418479003-lil95t9ikfdhhveqt9shhrdq86alvp0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.produtividade.HorasBloqueioActivity">
+
+        <TextView
+            android:id="@+id/txtLabelManha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Manhã:"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+
+            android:textColor="@color/textPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/lasodhasoidjio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Hora de início:"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/textPrimary"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtHoraInicioManha"
+            app:layout_constraintEnd_toStartOf="@+id/txtHoraInicioManha"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtHoraInicioManha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintEnd_toStartOf="@+id/btnEscolherInicioManha"
+            app:layout_constraintStart_toEndOf="@+id/lasodhasoidjio"
+            app:layout_constraintTop_toBottomOf="@+id/txtLabelManha" />
+
+        <Button
+            android:id="@+id/btnEscolherInicioManha"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="timePickerInicioManha"
+            android:text="Escolher"
+            android:textColor="@color/white"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtHoraInicioManha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtHoraInicioManha" />
+
+
+        <TextView
+            android:id="@+id/txtHoraInicioFim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Hora de fim:"
+            android:textColor="@color/textPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtHoraFimManha"
+            app:layout_constraintEnd_toStartOf="@+id/txtHoraFimManha"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtHoraFimManha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintEnd_toStartOf="@+id/btnEscolherFimManha"
+            app:layout_constraintStart_toEndOf="@+id/txtHoraInicioFim"
+            app:layout_constraintTop_toBottomOf="@+id/btnEscolherInicioManha" />
+
+        <Button
+            android:id="@+id/btnEscolherFimManha"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="timePickerFimManha"
+            android:text="Escolher"
+            android:textColor="@color/white"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtHoraFimManha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtHoraFimManha" />
+
+
+        <TextView
+            android:id="@+id/txtLabelTarde"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Tarde:"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/textPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEscolherFimManha" />
+
+
+        <TextView
+            android:id="@+id/txtLabelHoraInicioTarde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Hora de início:"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/textPrimary"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtHoraInicioTarde"
+            app:layout_constraintEnd_toStartOf="@+id/txtHoraInicioTarde"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtHoraInicioTarde"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/textPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/btnEscolherInicioTarde"
+            app:layout_constraintStart_toEndOf="@+id/txtLabelHoraInicioTarde"
+            app:layout_constraintTop_toBottomOf="@+id/txtLabelTarde" />
+
+        <Button
+            android:id="@+id/btnEscolherInicioTarde"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="timePickerInicioTarde"
+            android:text="Escolher"
+            android:textColor="@color/white"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtHoraInicioTarde"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtHoraInicioTarde" />
+
+
+        <TextView
+            android:id="@+id/txtLabelHoraFimTarde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Hora de fim:"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/textPrimary"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtHoraFimTarde"
+            app:layout_constraintEnd_toStartOf="@+id/txtHoraFimTarde"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtHoraFimTarde"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/textPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/btnEscolherFimTarde"
+            app:layout_constraintStart_toEndOf="@+id/txtLabelHoraFimTarde"
+            app:layout_constraintTop_toBottomOf="@+id/btnEscolherInicioTarde" />
+
+        <Button
+            android:id="@+id/btnEscolherFimTarde"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="timePickerFimTarde"
+            android:text="Escolher"
+            android:textColor="@color/white"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtHoraFimTarde"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtHoraFimTarde" />
+
+
+        <Button
+            android:id="@+id/btnSalvarHorario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorAccent"
+            android:onClick="salvar"
+            android:text="OK"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEscolherFimTarde"
+            app:layout_constraintVertical_bias="0.349" />
+
+
+    </android.support.constraint.ConstraintLayout>
